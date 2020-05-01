@@ -7,11 +7,11 @@ Prerequisites:
 
 If you don't have docker, please follow the following link to download it:
 
-https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
+```https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04```
 
 Now, once the setup is ready, run the following command to run the server
 
-docker-compose up -d --build
+```docker-compose up -d --build```
 
 
 You can check the running containers by
