@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  r_api:
+    container_name: r_api
+    restart: always
+    build: ./R_demo
+    ports:
+      - "8767:8767"
+
+  nginx:
+    container_name: nginx
+    restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - r_api
